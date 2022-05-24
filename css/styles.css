@@ -1,28 +1,31 @@
 * {
     box-sizing: border-box;
+    margin: auto;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     margin: auto;
+   
   }
   .emojis {
     display: grid;
     margin: auto;
-
+    grid-gap: 20px;
   }
   .emoji {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
-    margin: 5px 20px 20px 20px;
-    width: 450px;
     height: 350px;
     display: flex;
     flex-direction: column;
+
   }
+  
   h1 {
-      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
   
   .emoji h2 {
@@ -31,13 +34,12 @@ body {
   }
   
   .emoji a {
-    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    align-items: flex-end;
+    width: 100%;
   }
   
   .icon {
@@ -49,14 +51,25 @@ body {
   }
 
   @media screen and (min-width: 600px) {
+      body {
+        max-width: 1000px;
+      }
       .emojis {
           display: grid;
-          margin: auto;
+          margin-bottom: 20px;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
+          grid-gap: 20px;
        }
-       .emoji {
+
+      .emoji {
            padding: 1rem;
+           justify-content: space-around;
        }
+       
+      .emoji a {
+         margin: 10px 30px 10px 0;
+       }
+      
     
   }
