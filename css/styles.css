@@ -8,6 +8,7 @@ body {
   }
   .emojis {
     display: grid;
+    margin: auto;
 
   }
   .emoji {
@@ -30,12 +31,13 @@ body {
   }
   
   .emoji a {
+    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    /*align-self: end; NEEDS TO ADD A FLEXBOX PROPERTY*/
+    align-items: flex-end;
   }
   
   .icon {
@@ -56,4 +58,5 @@ body {
        .emoji {
            padding: 1rem;
        }
+    
   }
