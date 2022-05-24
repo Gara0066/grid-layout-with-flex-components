@@ -2,14 +2,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     display: grid;
+    width: 500px;
   }
   
   .emoji {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1.5rem 1rem;
-    margin: 5px 20px 20px 20px ;
-
+    margin: 5px 20px 20px 20px;
+    display: flex;
+    flex-flow: column;
   }
   
   .emoji h2 {
@@ -27,4 +29,11 @@ body {
   
   .icon {
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  @media screen and (min-width: 600px) {
+      
   }
