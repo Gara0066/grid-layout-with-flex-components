@@ -1,17 +1,27 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-    display: grid;
-    width: 500px;
+    margin: auto;
   }
-  
+  .emojis {
+    display: grid;
+
+  }
   .emoji {
     border: 1px solid #222;
     border-radius: 8px;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     margin: 5px 20px 20px 20px;
+    width: 450px;
+    height: 350px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+  }
+  h1 {
+      margin-left: 20px;
   }
   
   .emoji h2 {
@@ -25,15 +35,25 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    /*align-self: end; NEEDS TO ADD A FLEXBOX PROPERTY*/
   }
   
   .icon {
     font-size: 4rem;
+    margin: 0 15px 15px 15px;
     display: flex;
     justify-content: center;
     order: -1;
   }
 
   @media screen and (min-width: 600px) {
-      
+      .emojis {
+          display: grid;
+          margin: auto;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+       }
+       .emoji {
+           padding: 1rem;
+       }
   }
